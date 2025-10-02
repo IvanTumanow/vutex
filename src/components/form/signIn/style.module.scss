@@ -1,0 +1,51 @@
+@use '@/app/constants.scss' as const;
+
+.label{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  width: 100%;
+}
+
+.fields{
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+
+  width: 300px;
+}
+
+.note{
+  color: rgba(const.$color-text-secondary, .5);
+  font-size: 14px;
+}
+
+.input{
+  width: 100%;
+
+  border-radius: 15px;
+  background-color: transparent;
+
+  border: 1px solid rgba(const.$color-text-main, .25);
+
+  padding: 10px 5px;
+
+  &:invalid{
+    border: 1px solid rgba(const.$color-error-text, 1);
+    color: const.$color-error-text
+  }
+}

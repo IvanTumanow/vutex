@@ -1,0 +1,57 @@
+@use '@/app/constants.scss' as const;
+
+.page{
+
+}
+
+.formWrapper{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 4px 0 rgba(#000, .25);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title{
+  color: const.$color-text-main;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.description{
+  color: const.$color-text-secondary
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0;
+}
+
+.haventAccountText{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+
+  font-size: 14px;
+  color: const.$color-text-secondary;
+}
+
+.signUpText{
+  font-size: 14px;
+  color: const.$color-text-main;
+  font-weight: 500;
+}

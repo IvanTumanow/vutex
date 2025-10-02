@@ -1,0 +1,23 @@
+@use '@/app/constants.scss' as const;
+
+.pagesTitle{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.pagesLink{
+  color: rgba(const.$color-main-content, .5)
+}
+
+.pages{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pagesLinks{
+  display: flex;
+  flex-direction: row;
+
+  gap: 15px;
+}

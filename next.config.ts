@@ -1,4 +1,5 @@
 import type {NextConfig} from "next";
+import {redirects} from "@/config/redirects.config";
 
 const nextConfig: NextConfig = {
     output: 'standalone',
@@ -9,6 +10,13 @@ const nextConfig: NextConfig = {
     images: {
         formats: ['image/webp'],
         unoptimized: true,
+    },
+
+    async redirects() {
+        return [
+            await redirects.Auth(),
+            await redirects.Profile()
+        ]
     },
 };
 

@@ -1,0 +1,66 @@
+@use '@/app/constants.scss' as const;
+
+.footer{
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  background-color: const.$color-text-secondary;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+
+  width: const.$desktop-width-content;
+  padding: 20px;
+
+  & *{
+    color: const.$color-main-content;
+  }
+}
+
+.navbarUpper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid const.$color-main-content;
+}
+
+.navbarDown{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-top: 25px;
+}
+
+.developer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.telegram{
+  width: 30px;
+  height: 30px;
+}
+
+.contacts {
+  display: flex;
+}
+
+.pagesMenu{
+  display: flex;
+  flex-direction: column;
+
+  gap: 60px;
+}
